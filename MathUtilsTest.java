@@ -30,19 +30,19 @@ public class MathUtilsTest {
 
     @Test
     public void testMultiply() {
-        int result = mathUtils.multiply(7, 2);
+        int result = mu.multiply(7, 2);
         assertEquals(14, result);
     }
 
     @Test
     public void testDivideByNonZero() {
-        double result = mathUtils.divide(8, 2);
+        double result = mu.divide(8, 2);
         assertEquals(4.0, result, 0.001); // 3rd argument is delta for double comparison
     }
 
     @Test
     public void testDivideByZero() {
-        double result = mathUtils.divide(8, 0);
+        double result = mu.divide(8, 0);
         assertEquals(-1.0, result, 0.001);
     }
 }
